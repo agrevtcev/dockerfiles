@@ -11,7 +11,7 @@ services:
             PASS: ${PASS}
             QUOTA: ${QUOTA}
         ports:
-            - 10445:445
+            - 10445:10445
         volumes:
             - backups:/backups:rw
         restart: unless-stopped
