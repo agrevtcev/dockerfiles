@@ -16,7 +16,7 @@ RUN apt-get update && \
 ADD samba.conf /etc/samba/smb.conf
 ADD TimeMachine.quota.tmpl /etc/TimeMachine.quota.tmpl
 
-EXPOSE 445/tcp
+EXPOSE 10445/tcp
 
 ADD entrypoint /entrypoint
 RUN chmod 0755 /entrypoint
